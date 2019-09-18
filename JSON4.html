@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>patient details</p>
+
+<p id="demo"></p>
+
+<script>
+
+var obj, i,j,x = "";
+obj = {
+	"patient":[
+		{"name":"hari",
+		"doc":"tom",
+		"disease":["dname":"dengue",
+		"sym":["cold","fever"]},
+	
+		{"name":"sai",
+		"doc":"jam",
+		"disease":["dname":"migraine",
+		"sym":["headache","fever"]},	
+	]
+}
+
+for(i in obj.disease) {
+	x = x + "<h2>" + obj.disease[i].name + "</h2>";
+	for(j in obj.disease[i].sym){
+		x = x + obj.disease[i].sym[j] + "<br>";
+	}
+}
+
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
