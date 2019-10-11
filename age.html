@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<title>java script to print age</title>
+		<script>
+			function printage(){
+				var date = document.getElementById("date").value;
+				var month = document.getElementById("month").value;
+				var year = document.getElementById("year").value;
+				var age = "<br>age is:<br>";
+			
+				for(i=start;i<=end;i++){
+					if(i % 2 != 0){
+						oddnums= oddnums + i + "<br>";
+					}
+				}
+				//
+				document.getElementById("result").innerHTML = oddnums;
+			}
+		</script>
+	</head>
+	<body>
+		<h3>java script to print age!!</h3>
+		date: <input type="number" min="0" id="date" value= "" />
+		month: <input type="number" min="1" id="month" value= "" /> <br>
+		year: <input type="number" min="1" id="year" value= "" /> <br>
+		<input type="button" onclick="printage()" value= "print age is" />
+		<div id="result"> </div>
+	</body>
+</html>

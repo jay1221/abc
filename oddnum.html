@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>java script to print odd numbers within a range</title>
+		<script>
+			function printoddnums(){
+				var start = document.getElementById("start").value;
+				var end = document.getElementById("end").value;
+				var oddnums = "<br>odd numbers:<br>";
+			
+				for(i=start;i<=end;i++){
+					if(i % 2 != 0){
+						oddnums= oddnums + i + "<br>";
+					}
+				}
+				//
+				document.getElementById("result").innerHTML = oddnums;
+			}
+		</script>
+	</head>
+	<body>
+		<h3>java script to print odd numbers within a range!!</h3>
+		start: <input type="number" min="0" id="start" value= "" />
+		end: <input type="number" min="1" id="end" value= "" /> <br>
+		<input type="button" onclick="printoddnums()" value= "print odd numbers" />
+		<div id="result"> </div>
+	</body>
+</html>
