@@ -5,9 +5,7 @@ def dup(l1):
 	l2 = []
 	for n in l1:
 		if n not in l2:
-			l2.append(n)
-			
-			
+			l2.append(n)				
 	print(l2);
 	return l2
 l1=[1,2,3,4,5,5,5,6,3,2]
@@ -18,9 +16,7 @@ def dup(l1):
 	l2 = []
 	for n in l1:
 		if n not in l2:
-			l2.append(n)
-			
-			
+			l2.append(n)		
 	print(l2);
 	return l2
 
