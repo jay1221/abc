@@ -1,5 +1,7 @@
+#Demo: Classes in python
+
 class Person:
-	def __init__(self,name,age):
+	def __init__(self,name,age):		#Constructor of the class Person
 		self.name=name;
 		self.age= age
 
@@ -13,7 +15,7 @@ print("\nAge of person #1 is",p1.age)
 print("\nName of person #2 is",p2.name)
 print("\nAge of person #2 is",p2.age)
 
-p2.age=10 #modified age of person
+p2.age=10	#Attributes of the objects can be modified. By default public
 
 print("\nmodified age of person #2 is",p2.age)
 
