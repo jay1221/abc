@@ -33,7 +33,10 @@ s2 = student(name,age,m)
 print(s1.display())
 print()
 print(s2.display())
+
 #task2
+# Create a dictionary to hold student details with Register numbers and print details of students with even register number
+
 Sdetails = {
     10: {
         "name": "sanj",
