@@ -3,6 +3,7 @@ def ChangeStr(str1):
    temp=""
    temp1=""
    l=len(str1)
+
    for i in range(0,l):
        ch=str1[i]
        if ch>="a" and ch<="z":
@@ -15,6 +16,7 @@ def ChangeStr(str1):
        else:
             temp=temp+ch
    print(temp)
+
    for i in range(0,l):
        ch2=temp[i]
        if (ch2=="a" or ch2=="e" or ch2=="i" or ch2=="o" or ch2=="u"):
